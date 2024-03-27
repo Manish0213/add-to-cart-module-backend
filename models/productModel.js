@@ -11,9 +11,12 @@ const productSchema = new mongoose.Schema({
   },
   description: {
     type: String
+  },
+  imagePath: {
+      type: String,
   }
 });
 
-const Product = mongoose.model('Product', productSchema);
+const Products = mongoose.model('Product', productSchema);
 
-module.exports = Product;
+module.exports = Products;
